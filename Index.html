@@ -59,7 +59,7 @@
         <h3>Professional Information</h3>
         <div class="form-group mt-2">
             <label for="">Objective</label>
-            <textarea placeholder="Enter here" class="form-control" rows="3"></textarea>
+            <textarea placeholder="Enter here" class="form-control" rows="3" id="objField"></textarea>
         </div>
         <div class="form-group mt-2" id="we">
             <label for="">Work Experienece</label>
@@ -81,7 +81,7 @@
       
     </div>
     <div class="container text-center mt-3">
-        <button class="btn btn-primary btn-lg">Generate CV</button>
+        <button onclick="generateCV()" class="btn btn-primary btn-lg">Generate CV</button>
     </div>
 
     </div>
@@ -92,16 +92,68 @@
             <div class="col-md-4 text-center py-5 background">
             <img src="https://img.freepik.com/free-vector/illustration-businessman_53876-5856.jpg?w=740&t=st=1704216144~exp=1704216744~hmac=9b0708e11fdc6ffc0312b15be0dfe55ae5d8cced459d65253e84aef259bb46d5" alt="" class="img-fluid myimg"/>
             <!--This is 2nd column-->
-            <p>Kedar Jagtap</p>
-            <P>+91-7588236540</P>
-            <p>A/P- Walchandnagar</p>
+            <p id="nameT1">Kedar Jagtap</p>
+            <P id="contactT">+91-7588236540</P>
+            <p id="addressT">A/P- Walchandnagar</p>
             <hr/>
-            <p><a href="#1"></a>www.linkedin.com/in/kedar-jagtap-968230166</a></p>
-            <p><a href="#1"></a>www.linkedin.com/in/kedar-jagtap-968230166</a></p>
+            <p><a id="linkT" href="#1"></a>www.linkedin.com/in/kedar-jagtap-968230166</a></p>
+            <p><a id="GitT" href="#1"></a>www.linkedin.com/in/kedar-jagtap-968230166</a></p>
         </div>
-            <div class="col-md-8"></div>
+            <div class="col-md-8 py-5">
+            <h1 id="nameT2" class="text-center" style="font-weight: 980;">Kedar Chandrakant Jagatp</h1>
+            <div class="card mt-4">
+                <div class="card-header background">
+                    <h3>Objective</h3>
+                </div>
+                <div class="card-body">
+                    <p id="objectT">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ullam delectus laborum, molestias aspernatur quibusdam aliquid vero quis molestiae, error earum. Numquam possimus similique maiores culpa ad quaerat repellendus beatae?
+                    </p>
+                </div>
+            </div>
+            <!--Work Experience-->
+            <div class="card mt-4">
+                <div class="card-header background">
+                    <h3>Work Experienece</h3>
+                </div>
+                <div class="card-body">
+                <ul id="weT">
+                    <li>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, sed!
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, sed!
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, sed!
+                    </li>
+                </ul>
+                    
+                </div>
+            </div>
+            <!--Academic Qualification-->
+            <div class="card mt-4">
+                <div class="card-header background">
+                    <h3>Academic Qualification</h3>
+                </div>
+                <div class="card-body">
+                <ul id="aqT">
+                    <li>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, sed!
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, sed!
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, sed!
+                    </li>
+                </ul>  
+                </div>
+            </div>
+            <div class="container mt-3 text-center">
+                <button onclick="printCV()" class=" text-center background">Print CV</button>
+            </div>
         </div>
-
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="script.js"></script>

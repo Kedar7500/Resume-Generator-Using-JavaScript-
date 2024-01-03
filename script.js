@@ -24,5 +24,49 @@ function addNewQualification(){
 
     let aqob=document.getElementById("aq");
     let aqAddButtonOb=document.getElementById("aqAddButton");
-    weob.insertBefore(newNode,aqAddButtonOb);
+    aqob.insertBefore(newNode,aqAddButtonOb);
+}
+
+// generating CV
+function generateCV(){
+
+    let nameFeild=document.getElementById("nameField").value;
+
+    let nameT1=document.getElementById("nameT1");
+    nameT1.innerHTML=nameFeild;
+
+    // direct
+    document.getElementById("nameT2").innerHTML=nameFeild;
+    document.getElementById("contactT").innerHTML=document.getElementById("contactField").value;
+    document.getElementById("addressT").innerHTML=document.getElementById("addressField").value;
+
+    document.getElementById("linkT").innerHTML=document.getElementById("linkField").value;
+    document.getElementById("GitT").innerHTML=document.getElementById("gitField").value;
+
+    // objective
+    document.getElementById("objectT").innerHTML=document.getElementById("objField").value;
+    
+    // work experience
+    let wes= document.getElementsByClassName("weField");
+    let str=''
+    for(let e of wes){
+        str+=`<li>${e.value}</li>`;
+    }
+    document.getElementById("weT").innerHTML=str;
+    
+    // academic qualification
+
+    let aqs=document.getElementsByClassName("eqField")
+    let str1='';
+    for(let e of aqs){
+        str1+=`<li>${e.value}</li>`
+    }
+    document.getElementById("aqT").innerHTML=str1;
+
+    document.getElementById("cv-form").style.display='none'
+    document.getElementById('cv-template').style.display="block";
+}
+
+function printCV(){
+    window.print();
 }
