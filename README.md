@@ -1,2 +1,2 @@
 # Resume-Generator-Using-JavaScript-
-This is my mini project Named as "Resume Generator". 
+This is a simple web application developed using JavaScript, HTML, and CSS that allows users to generate professional resumes dynamically.
